@@ -42,12 +42,18 @@ body {
 
 /* top nav bar */
 .grid-nav {
-  align-items: center;
   border: 1px solid #778899;
   display: flex;
   grid-area: 1 / 2 / 1 / 6;
   justify-content: space-between;
   margin: 0 0 0 0;
+}
+
+.nav-header {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-left-dir {
@@ -63,32 +69,15 @@ body {
 }
 
 .search {
-  width: 63vw;
-  height: 57px;
-  margin: -2vw;
-  padding: 0 0 2px 2vw;
+  width: 59vw;
+  height: 63px;
+  padding: 0 0 0px 2vw;
   font-size: 1.1em;
-  color: #DEDEE5;
   background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png);
   background-repeat: no-repeat;
   background-size: 25px 25px;
+  background-position: left;
 }
-
-.search::placeholder {
- 
-}
-
-.search:hover {
-  background-color: white;
-}
-
-/* .icon-search {
-  position: absolute;
-  font-size: 1.4em;
-  color: #979EA3;
-  margin: 0 0 0 -1.7vw;
-  pointer-events: none;
-} */
 
 .input-and-icon {
   width: 72%;
@@ -114,30 +103,20 @@ body {
 
 .header-menu-button {
   height: 100%;
-  width: 8%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 -2.4vw 0 0;
 }
 
 .user-icon {
   height: 100%;
-  width: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0px 0 -1.37vw;
 }
 
 .calendar {
   height: 100%;
-  width: 1%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
+.icon-th {
+  display: flex;
+  justify-content: center;
+}
 
 /* left list items */
 .left-nav-header {
