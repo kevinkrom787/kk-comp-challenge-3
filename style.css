@@ -7,7 +7,7 @@ body {
   margin: auto;
   height: 100%;
   display: grid;
-  grid-template: 9.5% 9.1% 8% 4.5% 15.5% 10.5% 16.5% 15.5% 16.5%/ 15% 21% 21% 23% 20%;
+  grid-template: 9.5% 11.1% 8% 4.5% 15.5% 10.5% 16.5% 15.5% 16.5%/ 15% 21% 21% 23% 20%;
 }
 
 .grid-left {
@@ -99,10 +99,16 @@ body {
 
 .nav-header:hover {
   background-color: #44A5F4;
+  color: #FCFBF9;
 }
 
 .header-menu-button {
   height: 100%;
+}
+
+.header-menu-button:hover {
+  color: #FCFBF9;
+  font-
 }
 
 .user-icon {
@@ -159,16 +165,75 @@ ul li:hover {
 }
 
 h2 {
-  margin-left: 5vw;
+  margin: 3vw 0 0 7vw;
 }
 
 .location-preview {
-  font-size: .4em;
-
+  font-size: .49em;
 }
 
 #preview-post {
   color: #88C4EC;
+}
+
+#preview-post:hover {
+  cursor: pointer;
+}
+
+.job-title-button-list {
+  display: flex;
+  align-items: center;
+  margin-right: 7vw;
+  width: 17%;
+}
+
+.job-title-buttons:hover {
+  background-color: #44A4F2;
+  cursor: pointer;
+  color: white;
+}
+
+#long-button {
+  border-radius: 28%;
+  border: 2px solid #E6E6E8;
+  display: flex;
+  font-weight: bold;
+  height: 34px;
+  width: 79px;
+  justify-content: center;
+}
+
+.icon-circle {
+  color: #99C558;
+}
+
+.icon-circle:hover {
+  color: white;
+}
+
+.rounded-buttons {
+  display: flex;
+  color: #9B9FA9;
+}
+
+.icon-bookmark {
+  border-radius: 50%;
+  color: #9B9FA9;
+  height: 30px;
+}
+
+.icon-pencil {
+  border-radius: 50%;
+  color: #9B9FA9;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.icon-trash-empty {
+  border-radius: 50%;
+  color: #9B9FA9;
+  height: 30px;
+  margin-left: 10px;
 }
 
 /* dashboard NavBar */
