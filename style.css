@@ -70,7 +70,7 @@ body {
 
 .search {
   width: 59vw;
-  height: 63px;
+  height: 60px;
   padding: 0 0 0px 2vw;
   font-size: 1.1em;
   background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png);
@@ -104,6 +104,7 @@ body {
 
 .header-menu-button {
   height: 100%;
+  width: 0%;
 }
 
 .header-menu-button:hover {
@@ -158,14 +159,14 @@ ul li:hover {
 
 .job-title {
   grid-area: 2 / 2 / 4 / 6;
-  color: #88888B;
+  color: #374050;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 h2 {
-  margin: 3vw 0 0 7vw;
+  margin: 3vw 0 0 5vw;
 }
 
 .location-preview {
@@ -239,9 +240,30 @@ h2 {
 /* dashboard NavBar */
 
 .dashboard-nav-bar  {
-  background-color: purple;
   grid-area: 4 / 2 / 4 / 6;
 }
+
+.hiring-summary {
+  color: #88888B;
+  display: flex;
+  justify-content: space-around;
+  margin: -7px 11vw 0 26px;
+  font-weight: bold;
+}
+
+.summary-link:hover {
+  background-color: transparent;
+  color: black;
+  border-bottom: solid 2.5px #49ACF2;
+  font-size: 1.1em;
+  border-left: none;
+}
+
+hr {
+  color: #E6EAEE;
+  margin: auto;
+}
+
 
 /* Graph section */
 
@@ -277,6 +299,17 @@ h2 {
   -webkit-transform: translate(0.7em);
   transform: translateY(0.7em);
 }
+
+.donut-graph-section-two {
+    grid-area: 7 /2 / 5 / 6;
+    transform: translate(100px, 0px);
+}
+
+.donut-graph-section-three {
+    grid-area: 7 /2 / 5 / 6;
+    transform: translate(265px, 0px);
+}
+
 
 
 
