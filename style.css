@@ -70,7 +70,7 @@ body {
 
 .search {
   width: 59vw;
-  height: 63px;
+  height: 60px;
   padding: 0 0 0px 2vw;
   font-size: 1.1em;
   background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png);
@@ -301,8 +301,15 @@ hr {
 }
 
 .donut-graph-section-two {
-  transform: translate(200px, 0px);
+    grid-area: 7 /2 / 5 / 6;
+    transform: translate(100px, 0px);
 }
+
+.donut-graph-section-three {
+    grid-area: 7 /2 / 5 / 6;
+    transform: translate(265px, 0px);
+}
+
 
 
 
