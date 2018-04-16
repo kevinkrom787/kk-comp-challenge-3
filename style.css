@@ -7,7 +7,7 @@ body {
   margin: auto;
   height: 100%;
   display: grid;
-  grid-template: 9.5% 11.1% 8% 4.5% 15.5% 10.5% 16.5% 15.5% 16.5%/ 15% 21% 21% 23% 20%;
+  grid-template: 9.5% 11.1% 8% 4.5% 15.5% 18.5% 21.5% 15.5% 16.5%/ 15% 21% 21% 23% 20%;
 }
 
 .grid-left {
@@ -70,13 +70,14 @@ body {
 
 .search {
   width: 59vw;
-  height: 60px;
+  height: 65px;
   padding: 0 0 0px 2vw;
   font-size: 1.1em;
   background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png);
   background-repeat: no-repeat;
   background-size: 25px 25px;
   background-position: left;
+  border-top: none;
 }
 
 .input-and-icon {
@@ -269,6 +270,7 @@ hr {
 
 .donut-graph-section {
   grid-area: 7 /2 / 5 / 6;
+  transform: translate(45px, 0px);
 }
 
 
@@ -302,29 +304,72 @@ hr {
 
 .donut-graph-section-two {
     grid-area: 7 /2 / 5 / 6;
-    transform: translate(100px, 0px);
+    transform: translate(106px, 0px);
 }
 
 .donut-graph-section-three {
     grid-area: 7 /2 / 5 / 6;
-    transform: translate(265px, 0px);
+    transform: translate(271px, 0px);
 }
 
-
-
+.donut-graph-buttons {
+  display: flex;
+  justify-content: space-around;
+}
 
 /* job description */
 
 .job-description {
   grid-area: 11 / 2 / 7 / 5;
-  background-color: orangered;
 }
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+
+
+.hiring-manager {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+/* Social media */
 
 .social {
   grid-area: 7 / 5 / 8 /6;
-  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 9px;
 }
 
+.social-button {
+  margin: 0 5% 0 5%;
+  height: 5.5vh;
+  color: white;
+}
+
+.social-icons {
+  font-size: 1.5em;
+}
+
+.facebook {
+  background-color: #4F70BD;
+}
+
+.twitter {
+  background-color: #45AAEA;
+}
+
+.linkedin {
+  background-color: #3280B7;
+}
+
+/* Link to job */
 .link-to-job {
   grid-area: 8 / 5 / 11 / 7;
   background-color: chocolate;
