@@ -7,7 +7,7 @@ body {
   margin: auto;
   height: 100%;
   display: grid;
-  grid-template: 9.5% 11.1% 8% 4.5% 15.5% 18.5% 21.5% 15.5% 16.5%/ 15% 21% 21% 23% 20%;
+  grid-template: 9.5% 11.1% 8% 4.5% 15.5% 25.5% 20.5% 11.5% 4.5%/ 15% 21% 21% 18% 25%;
 }
 
 .grid-left {
@@ -270,7 +270,9 @@ hr {
 
 .donut-graph-section {
   grid-area: 7 /2 / 5 / 6;
-  transform: translate(45px, 0px);
+  padding-left: 35px;
+  width: 50%;
+  background-color: #EDF2F6;
 }
 
 
@@ -304,17 +306,43 @@ hr {
 
 .donut-graph-section-two {
     grid-area: 7 /2 / 5 / 6;
-    transform: translate(106px, 0px);
+
 }
 
 .donut-graph-section-three {
     grid-area: 7 /2 / 5 / 6;
-    transform: translate(271px, 0px);
+    /* transform: translate(100px, 0px); */
 }
 
 .donut-graph-buttons {
+  grid-area: 7 /2 / 5 / 6;
   display: flex;
   justify-content: space-around;
+  align-items: flex-end;
+}
+
+.vertical-graph {
+  grid-area: 7 /4 / 5 / 6;
+  background-color: #EDF2F6;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.image-vertical-graph {
+  height: 80%;
+  width: 100%;
+  padding-top: 15px;
+
+}
+
+.graph-buttons {
+    width: 12vw;
+    height: 2vw;
+    border-radius: 10px;
+}
+
+.icon-circle-gray {
+  color: #8B95A3;
 }
 
 /* job description */
@@ -372,7 +400,11 @@ table {
 /* Link to job */
 .link-to-job {
   grid-area: 8 / 5 / 11 / 7;
-  background-color: chocolate;
+}
+
+.copy-button {
+  color: white;
+  background-color: #67B7BE;
 }
 
 /* media queries */
@@ -380,11 +412,16 @@ table {
 @media only screen and (max-width: 1150px) {
   .grid-left {
     display: none;
+    
   }
 
   body {
-    grid-template: 5.5% 1.5% 8% 4.5% 15.5% 10.5% 16.5% 15.5% 16.5%/0% 25% 25% 25% 25%; 
+    grid-template: 9.5% 8.5% 8% 8.5% 18.5% 11.5% 16.5% 17.5% 16.5%/0% 25% 25% 25% 25%; 
 
+  }
+
+  .search {
+    width: 70vw;
   }
 }
 
@@ -397,6 +434,10 @@ table {
     grid-template: 5.5% 1.5% 8% 4.5% 15.5% 10.5% 16.5% 15.5% 16.5%/0% 25% 25% 25% 25%;
     background-color: chartreuse;
 
+  }
+
+  .search {
+    width: 70vw;
   }
 }
 
