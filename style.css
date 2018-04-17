@@ -43,6 +43,7 @@ body {
 
 .grid-nav {
   border: 1px solid #778899;
+  color: #979EA3;
   display: flex;
   grid-area: 1 / 2 / 1 / 6;
   justify-content: space-between;
@@ -258,6 +259,11 @@ h2 {
   font-weight: bold;
 }
 
+.hiring-summary-hr {
+  width: 100%;
+  border: 1px solid #E7EAEE;
+}
+
 .summary-link:hover {
   background-color: transparent;
   color: black;
@@ -377,6 +383,8 @@ th {
 
 table {
 margin: 0% 5% 0% 5%;
+  height: 103vh;
+  border: 1px solid #7F8DA5;
 }
 
 .job-edit-button {
@@ -386,7 +394,9 @@ margin: 0% 5% 0% 5%;
   width: 6vw;
 }
 
-..job-edit-button:hover
+.border-bottom {
+  border-bottom: 1px solid #7F8DA5;
+}
 
 .icon-pencil {
   color: white;
@@ -397,6 +407,31 @@ margin: 0% 5% 0% 5%;
   border-radius: 50%;
   height: 60px;
   width: 60px;
+}
+.last-table-row {
+  border-bottom-style: none;
+}
+
+.border-with-icon {
+  position: absolute;
+  display: flex;
+  width: 81%;
+  padding-bottom: 20px;
+}
+
+hr {
+  border: 1px solid #7F8DA5;
+  width: 47%;
+}
+
+.icon-angle-up {
+  content: '\f106';
+  cursor: pointer;
+  font-size: 1.8em;
+  border: 1px solid #7F8DA5;
+  border-radius: 29px;
+  display: flex;
+  justify-content: center;
 }
 
 /* Social media */
@@ -451,6 +486,11 @@ margin: 0% 5% 0% 5%;
   height: 5vh;
   width: 18vw;
   margin: 2vw 0px 5px 0px;
+}
+
+.link-to-job-header {
+  margin: 2vw 0px 24px 0vw;
+
 }
 
 /* media queries */
