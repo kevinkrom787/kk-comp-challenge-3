@@ -231,6 +231,13 @@ h2 {
   height: 30px;
 }
 
+.pencil-one {
+  border-radius: 50%;
+  color: #9B9FA9;
+  font-size: 1.2em;
+  height: 30px;
+}
+
 .icon-pencil {
   border-radius: 50%;
   color: #9B9FA9;
@@ -374,6 +381,10 @@ th {
   background-color: #717E93;
 }
 
+td {
+  border: none;
+}
+
 .table-header {
   color: white;
   height: 10vh;
@@ -382,9 +393,12 @@ th {
 }
 
 table {
-margin: 0% 5% 0% 5%;
+  margin: 0% 0% 0% 4%;
   height: 103vh;
   border: 1px solid #7F8DA5;
+  border-right: none;
+  border-left: none;
+  border-top: none;
 }
 
 .job-edit-button {
@@ -396,11 +410,14 @@ margin: 0% 5% 0% 5%;
 
 .border-bottom {
   border-bottom: 1px solid #7F8DA5;
+  background-color: #FFFFFF;
+  border-left: none;
+  color: #A0A3A6;
 }
 
-.icon-pencil {
-  color: white;
-  font-size: 1.2em;
+.pencil-two {
+    color: white;
+    margin: 0;
 }
 
 .hiring-manager {
@@ -425,13 +442,21 @@ hr {
 }
 
 .icon-angle-up {
+  border-radius: 29px;
+  border: 1px solid #7F8DA5;
+  color: #7F8DA5;
   content: '\f106';
   cursor: pointer;
-  font-size: 1.8em;
-  border: 1px solid #7F8DA5;
-  border-radius: 29px;
   display: flex;
+  font-size: 1.8em;
+  height: 31px;
   justify-content: center;
+}
+
+.icon-angle-up:hover {
+  cursor: pointer;
+  background-color: #7F8DA5;
+  color: white;
 }
 
 /* Social media */
@@ -441,12 +466,13 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+  width: 96%;
   background-color: #EDF2F6;
+  padding-right: 5%;
 }
 
 .social-button {
-  margin: 0 7% 0 7%;
+  margin: 0 5% 0 0%;
   height: 5.5vh;
   color: white;
 }
