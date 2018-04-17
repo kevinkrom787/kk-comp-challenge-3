@@ -25,7 +25,7 @@ body {
 
 .icon {
   height: 15px;
-  width: 15px;  
+  width: 15px;
 }
 
 .Ali-portrait {
@@ -39,8 +39,8 @@ body {
   margin: 2em 0 16px 0;
 }
 
-
 /* top nav bar */
+
 .grid-nav {
   border: 1px solid #778899;
   display: flex;
@@ -50,11 +50,12 @@ body {
 }
 
 .nav-header {
-  border-right: 1px solid #778899;
+  align-items: center;
+  border-right: 1px solid #D3D3D3;
   display: flex;
   flex-grow: 1;
+  font-size: 1.4em;
   justify-content: center;
-  align-items: center;
 }
 
 .icon-left-dir {
@@ -70,15 +71,16 @@ body {
 }
 
 .search {
-  width: 59vw;
-  height: 66px;
-  padding: 0 0 0px 2vw;
-  font-size: 1.1em;
   background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png);
+  background-position: left;
   background-repeat: no-repeat;
   background-size: 25px 25px;
-  background-position: left;
+  border-bottom: 1px solid #D3D3D3;
   border-top: none;
+  font-size: 1.1em;
+  height: 66px;
+  padding: 0 0 0px 2vw;
+  width: 59vw;
 }
 
 .input-and-icon {
@@ -92,6 +94,7 @@ body {
 .left-nav-icon {
   margin: 0 12px 0 15px;
 }
+
 .icon-ok-squared {
   cursor: pointer;
   background-color: #F6DB4C;
@@ -129,6 +132,7 @@ body {
 }
 
 /* left list items */
+
 .left-nav-header {
   border-top: 2px solid #282828;
   color: #101010;
@@ -151,12 +155,6 @@ ul li:hover {
 }
 
 /*  */
-
-
-
-
-
-
 
 /* job title box */
 
@@ -190,6 +188,11 @@ h2 {
   align-items: center;
   margin-right: 7vw;
   width: 17%;
+}
+
+.job-title-button {
+  height: 40px;
+  width: 40px;
 }
 
 .job-title-buttons:hover {
@@ -243,7 +246,7 @@ h2 {
 
 /* dashboard NavBar */
 
-.dashboard-nav-bar  {
+.dashboard-nav-bar {
   grid-area: 4 / 2 / 4 / 6;
 }
 
@@ -268,7 +271,6 @@ hr {
   margin: auto;
 }
 
-
 /* Graph section */
 
 .donut-graph-section {
@@ -278,7 +280,6 @@ hr {
   background-color: #EDF2F6;
   padding-bottom: 18vh;
 }
-
 
 .donut-graph-text-one {
   font: 16px/1.4em 'Source Sans Pro', sans-serif;
@@ -309,13 +310,12 @@ hr {
 }
 
 .donut-graph-section-two {
-    grid-area: 7 /2 / 5 / 6;
-
+  grid-area: 7 /2 / 5 / 6;
 }
 
 .donut-graph-section-three {
-    grid-area: 7 /2 / 5 / 6;
-    /* transform: translate(100px, 0px); */
+  grid-area: 7 /2 / 5 / 6;
+  /* transform: translate(100px, 0px); */
 }
 
 .donut-graph-buttons {
@@ -334,19 +334,19 @@ hr {
 
 .image-vertical-graph {
   height: 63%;
-  width: 96%;
+  width: 86%;
   padding-top: 15px;
-  margin: 0 0 0 22px;
+  margin: 0 0 0 5vw;
 }
 
 .graph-buttons {
-    width: 12vw;
-    height: 2vw;
-    border-radius: 10px;
-    font-size: .7em;
-    margin: 0px 0vw 10vh 1.5vw;
-    color: #757479;
-    font-weight: 600;
+  width: 12vw;
+  height: 2vw;
+  border-radius: 10px;
+  font-size: .7em;
+  margin: 0px 0vw 10vh 1.5vw;
+  color: #757479;
+  font-weight: 600;
 }
 
 .bold-numbers {
@@ -361,15 +361,37 @@ hr {
 
 .job-description {
   grid-area: 11 / 2 / 7 / 5;
+  background-color: #EDF2F6;
+}
+
+th {
+  background-color: #717E93;
+}
+
+.table-header {
+  color: white;
+  height: 10vh;
+  text-align: left;
+  padding: 0px 0px 0 1.5vw;
 }
 
 table {
-  table-layout: fixed;
-  width: 100%;
-  border-collapse: collapse;
-  border: 3px solid purple;
+margin: 0% 5% 0% 5%;
 }
 
+.job-edit-button {
+  margin: 0px 0 0 10vw;
+  background-color: #7F8DA5;
+  height: 30px;
+  width: 6vw;
+}
+
+..job-edit-button:hover
+
+.icon-pencil {
+  color: white;
+  font-size: 1.2em;
+}
 
 .hiring-manager {
   border-radius: 50%;
@@ -384,11 +406,12 @@ table {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 9px;
+  width: 100%;
+  background-color: #EDF2F6;
 }
 
 .social-button {
-  margin: 0 5% 0 5%;
+  margin: 0 7% 0 7%;
   height: 5.5vh;
   color: white;
 }
@@ -410,13 +433,24 @@ table {
 }
 
 /* Link to job */
+
 .link-to-job {
   grid-area: 8 / 5 / 11 / 7;
+  padding: 15px 10px 0px 4px;
+  background-color: #EDF2F6;
 }
 
 .copy-button {
   color: white;
   background-color: #67B7BE;
+  height: 5.5vh;
+  width: 5vw;
+}
+
+.job-link-input {
+  height: 5vh;
+  width: 18vw;
+  margin: 2vw 0px 5px 0px;
 }
 
 /* media queries */
@@ -424,14 +458,10 @@ table {
 @media only screen and (max-width: 1150px) {
   .grid-left {
     display: none;
-    
   }
-
   body {
-    grid-template: 9.5% 8.5% 8% 8.5% 18.5% 11.5% 16.5% 17.5% 16.5%/0% 25% 25% 25% 25%; 
-
+    grid-template: 9.5% 8.5% 8% 8.5% 18.5% 11.5% 16.5% 17.5% 16.5%/0% 25% 25% 25% 25%;
   }
-
   .search {
     width: 70vw;
   }
@@ -441,13 +471,10 @@ table {
   .grid-left {
     display: none;
   }
-
   body {
     grid-template: 5.5% 1.5% 8% 4.5% 15.5% 10.5% 16.5% 15.5% 16.5%/0% 25% 25% 25% 25%;
     background-color: chartreuse;
-
   }
-
   .search {
     width: 70vw;
   }
@@ -457,61 +484,61 @@ table {
   .grid-left {
     display: none;
   }
-
   body {
     grid-template: 5.5% 1.5% 8% 4.5% 15.5% 10.5% 16.5% 15.5% 16.5% 4.5%/0% 50%% 25% 25% 25%;
     background-color: chartreuse;
   }
-
   .social {
-  grid-area: 12 / 1 / 11 /6;
-  background-color: cadetblue;
-}
-
+    grid-area: 12 / 1 / 11 /6;
+    background-color: cadetblue;
+  }
   .link-to-job {
     grid-area: 11 / 1 / 12 / 6;
   }
 }
-
 
 /* ======================================
  
     MediaQuery-Reporter Styles
  
 ========================================= */
- 
+
 body:after {
-    content: "less than 320px";
-    font-size: 300%;
-    font-weight: bold;
-    position: fixed;
-    bottom: 60px;
-    width: 100%;
-    text-align: center;
-    background-color: hsla(1,60%,40%,0.7);
-    color: #fff;
+  content: "less than 320px";
+  font-size: 300%;
+  font-weight: bold;
+  position: fixed;
+  bottom: 60px;
+  width: 100%;
+  text-align: center;
+  background-color: hsla(1, 60%, 40%, 0.7);
+  color: #fff;
 }
+
 @media only screen and (min-width: 320px) {
-    body:after {
-        content: "320 to 480px";
-        background-color: hsla(90,60%,40%,0.7);
-    }
+  body:after {
+    content: "320 to 480px";
+    background-color: hsla(90, 60%, 40%, 0.7);
+  }
 }
+
 @media only screen and (min-width: 480px) {
-    body:after {
-        content: "480 to 768px";
-        background-color: hsla(180,60%,40%,0.7);
-    }
+  body:after {
+    content: "480 to 768px";
+    background-color: hsla(180, 60%, 40%, 0.7);
+  }
 }
+
 @media only screen and (min-width: 768px) {
-    body:after {
-        content: "768 to 1024px";
-        background-color: hsla(270,60%,40%,0.7);
-    }
+  body:after {
+    content: "768 to 1024px";
+    background-color: hsla(270, 60%, 40%, 0.7);
+  }
 }
+
 @media only screen and (min-width: 1024px) {
-    body:after {
-        content: "1024 and up";
-        background-color: hsla(360,60%,40%,0.7);
-    }
+  body:after {
+    content: "1024 and up";
+    background-color: hsla(360, 60%, 40%, 0.7);
+  }
 }
