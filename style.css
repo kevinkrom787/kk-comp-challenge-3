@@ -1,13 +1,15 @@
 html {
   height: 100%;
   font-family: 'Source Sans Pro', sans-serif;
+  background-color: white;
 }
 
 body {
+  max-width: 1440px;
   margin: auto;
   height: 100%;
   display: grid;
-  grid-template: 9.5% 11.1% 8% 4.5% 15.5% 25.5% 20.5% 11.5% 4.5%/ 15% 21% 21% 18% 25%;
+  grid-template: 9.5% 9.1% 10% 4.5% 15.5% 28.5% 21.5% 2.5% 4.5%/ 15% 21% 20% 17% 27%;
 }
 
 .grid-left {
@@ -25,7 +27,7 @@ body {
 
 .icon {
   height: 15px;
-  width: 15px;  
+  width: 15px;
 }
 
 .Ali-portrait {
@@ -39,10 +41,11 @@ body {
   margin: 2em 0 16px 0;
 }
 
-
 /* top nav bar */
+
 .grid-nav {
   border: 1px solid #778899;
+  color: #979EA3;
   display: flex;
   grid-area: 1 / 2 / 1 / 6;
   justify-content: space-between;
@@ -50,10 +53,12 @@ body {
 }
 
 .nav-header {
+  align-items: center;
+  border-right: 1px solid #D3D3D3;
   display: flex;
   flex-grow: 1;
+  font-size: 1.4em;
   justify-content: center;
-  align-items: center;
 }
 
 .icon-left-dir {
@@ -69,15 +74,16 @@ body {
 }
 
 .search {
-  width: 59vw;
-  height: 65px;
-  padding: 0 0 0px 2vw;
-  font-size: 1.1em;
   background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png);
+  background-position: left;
   background-repeat: no-repeat;
   background-size: 25px 25px;
-  background-position: left;
+  border-bottom: 1px solid #D3D3D3;
   border-top: none;
+  font-size: 1.1em;
+  height: 66px;
+  padding: 0 0 0px 2vw;
+  width: 59vw;
 }
 
 .input-and-icon {
@@ -91,6 +97,7 @@ body {
 .left-nav-icon {
   margin: 0 12px 0 15px;
 }
+
 .icon-ok-squared {
   cursor: pointer;
   background-color: #F6DB4C;
@@ -106,6 +113,7 @@ body {
 .header-menu-button {
   height: 100%;
   width: 0%;
+  border-right: none;
 }
 
 .header-menu-button:hover {
@@ -127,11 +135,14 @@ body {
 }
 
 /* left list items */
+
 .left-nav-header {
   border-top: 2px solid #282828;
-  color: #101010;
-  padding: 15px 0 0 1.1em;
+  color: #67748B;
+  padding: 15px 0 0 16px;
   margin-bottom: -1vh;
+  font-weight: 1000;
+  font-size: 1rem;
 }
 
 ul {
@@ -149,12 +160,6 @@ ul li:hover {
 }
 
 /*  */
-
-
-
-
-
-
 
 /* job title box */
 
@@ -176,6 +181,7 @@ h2 {
 
 #preview-post {
   color: #88C4EC;
+  padding-left: 8px;
 }
 
 #preview-post:hover {
@@ -189,6 +195,11 @@ h2 {
   width: 17%;
 }
 
+.job-title-button {
+  height: 40px;
+  width: 40px;
+}
+
 .job-title-buttons:hover {
   background-color: #44A4F2;
   cursor: pointer;
@@ -196,13 +207,14 @@ h2 {
 }
 
 #long-button {
-  border-radius: 28%;
+  border-radius: 20px;
   border: 2px solid #E6E6E8;
   display: flex;
   font-weight: bold;
   height: 34px;
-  width: 79px;
   justify-content: center;
+  margin-right: 15px;
+  width: 10vw;
 }
 
 .icon-circle {
@@ -224,6 +236,13 @@ h2 {
   height: 30px;
 }
 
+.pencil-one {
+  border-radius: 50%;
+  color: #9B9FA9;
+  font-size: 1.2em;
+  height: 30px;
+}
+
 .icon-pencil {
   border-radius: 50%;
   color: #9B9FA9;
@@ -240,7 +259,7 @@ h2 {
 
 /* dashboard NavBar */
 
-.dashboard-nav-bar  {
+.dashboard-nav-bar {
   grid-area: 4 / 2 / 4 / 6;
 }
 
@@ -250,6 +269,11 @@ h2 {
   justify-content: space-around;
   margin: -7px 11vw 0 26px;
   font-weight: bold;
+}
+
+.hiring-summary-hr {
+  width: 100%;
+  border: 1px solid #E7EAEE;
 }
 
 .summary-link:hover {
@@ -265,16 +289,14 @@ hr {
   margin: auto;
 }
 
-
 /* Graph section */
 
 .donut-graph-section {
-  grid-area: 7 /2 / 5 / 6;
-  padding-left: 35px;
-  width: 50%;
-  background-color: #EDF2F6;
+    background-color: #EDF2F6;
+    grid-area: 7 /2 / 5 / 6;
+    padding: 0 0 13vh 35px;
+    width: 54%;
 }
-
 
 .donut-graph-text-one {
   font: 16px/1.4em 'Source Sans Pro', sans-serif;
@@ -305,13 +327,12 @@ hr {
 }
 
 .donut-graph-section-two {
-    grid-area: 7 /2 / 5 / 6;
-
+  grid-area: 7 /2 / 5 / 6;
 }
 
 .donut-graph-section-three {
-    grid-area: 7 /2 / 5 / 6;
-    /* transform: translate(100px, 0px); */
+  grid-area: 7 /2 / 5 / 6;
+  /* transform: translate(100px, 0px); */
 }
 
 .donut-graph-buttons {
@@ -329,16 +350,24 @@ hr {
 }
 
 .image-vertical-graph {
-  height: 80%;
-  width: 100%;
+  height: 63%;
+  width: 86%;
   padding-top: 15px;
-
+  margin: 0 0 0 5vw;
 }
 
 .graph-buttons {
-    width: 12vw;
-    height: 2vw;
-    border-radius: 10px;
+  width: 181px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: .7em;
+  margin: 0px 0vw 10vh 1.5vw;
+  color: #757479;
+  font-weight: 600;
+}
+
+.bold-numbers {
+  font-weight: bold;
 }
 
 .icon-circle-gray {
@@ -349,20 +378,89 @@ hr {
 
 .job-description {
   grid-area: 11 / 2 / 7 / 5;
+  background-color: #EDF2F6;
+}
+
+th {
+  background-color: #717E93;
+}
+
+td {
+  border: none;
+}
+
+.table-header {
+  color: white;
+  height: 10vh;
+  text-align: left;
+  padding: 0px 0px 0 1.5vw;
 }
 
 table {
-  table-layout: fixed;
-  width: 100%;
-  border-collapse: collapse;
-  border: 3px solid purple;
+  margin: 0% 0% 0% 4%;
+  height: 103vh;
+  border: 1px solid #7F8DA5;
+  border-right: none;
+  border-left: none;
+  border-top: none;
 }
 
+.job-edit-button {
+  margin: 0px 0 0 10vw;
+  background-color: #7F8DA5;
+  height: 30px;
+  width: 6vw;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #7F8DA5;
+  background-color: #FFFFFF;
+  border-left: none;
+  color: #A0A3A6;
+}
+
+.pencil-two {
+    color: white;
+    margin: 0;
+}
 
 .hiring-manager {
   border-radius: 50%;
   height: 60px;
   width: 60px;
+}
+.last-table-row {
+  border-bottom-style: none;
+}
+
+.border-with-icon {
+  position: absolute;
+  display: flex;
+  width: 81%;
+  padding-bottom: 20px;
+}
+
+hr {
+  border: 1px solid #7F8DA5;
+  width: 47%;
+}
+
+.icon-angle-up {
+  border-radius: 42%;
+  border: 1px solid #7F8DA5;
+  color: #7F8DA5;
+  content: '\f106';
+  cursor: pointer;
+  display: flex;
+  font-size: 1.8em;
+  height: 31px;
+  justify-content: center;
+}
+
+.icon-angle-up:hover {
+  cursor: pointer;
+  background-color: #7F8DA5;
+  color: white;
 }
 
 /* Social media */
@@ -372,11 +470,13 @@ table {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 9px;
+  width: 96%;
+  background-color: #EDF2F6;
+  padding-right: 5%;
 }
 
 .social-button {
-  margin: 0 5% 0 5%;
+  margin: 0 5% 0 0%;
   height: 5.5vh;
   color: white;
 }
@@ -398,13 +498,39 @@ table {
 }
 
 /* Link to job */
+
 .link-to-job {
   grid-area: 8 / 5 / 11 / 7;
+  padding: 15px 10px 0px 4px;
+  background-color: #EDF2F6;
+  color: #707A89;
 }
 
 .copy-button {
   color: white;
   background-color: #67B7BE;
+  height: 5.5vh;
+  width: 5.5vw;
+}
+
+.copy-button:hover {
+  cursor: pointer;
+}
+
+.job-link-input {
+  height: 5vh;
+  width: 18vw;
+  margin: 0 0 30px 0px;
+}
+
+.link-to-job-header {
+  margin: 0 0 10px 0;
+
+}
+
+.job-link-border-bottom {
+  margin: 0 0 25px 0px;
+  width: 97%;
 }
 
 /* media queries */
@@ -412,16 +538,23 @@ table {
 @media only screen and (max-width: 1150px) {
   .grid-left {
     display: none;
-    
   }
-
   body {
-    grid-template: 9.5% 8.5% 8% 8.5% 18.5% 11.5% 16.5% 17.5% 16.5%/0% 25% 25% 25% 25%; 
-
+    grid-template: 9.5% 8.5% 8% 4.5% 27.5% 14.5% 23.5% 1.5% 4.5%/0% 23% 24% 24% 29%
   }
-
   .search {
     width: 70vw;
+  }
+
+  .graph-buttons {
+    width: 16vw;
+    height: 2vw;
+    margin: 0px 0vw 8vh 1.5vw;
+  }
+
+  .border-with-icon {
+  width: 94%;
+  padding-bottom: 20px;
   }
 }
 
@@ -429,13 +562,10 @@ table {
   .grid-left {
     display: none;
   }
-
   body {
     grid-template: 5.5% 1.5% 8% 4.5% 15.5% 10.5% 16.5% 15.5% 16.5%/0% 25% 25% 25% 25%;
     background-color: chartreuse;
-
   }
-
   .search {
     width: 70vw;
   }
@@ -445,61 +575,61 @@ table {
   .grid-left {
     display: none;
   }
-
   body {
     grid-template: 5.5% 1.5% 8% 4.5% 15.5% 10.5% 16.5% 15.5% 16.5% 4.5%/0% 50%% 25% 25% 25%;
     background-color: chartreuse;
   }
-
   .social {
-  grid-area: 12 / 1 / 11 /6;
-  background-color: cadetblue;
-}
-
+    grid-area: 12 / 1 / 11 /6;
+    background-color: cadetblue;
+  }
   .link-to-job {
     grid-area: 11 / 1 / 12 / 6;
   }
 }
-
 
 /* ======================================
  
     MediaQuery-Reporter Styles
  
 ========================================= */
- 
+
 body:after {
-    content: "less than 320px";
-    font-size: 300%;
-    font-weight: bold;
-    position: fixed;
-    bottom: 60px;
-    width: 100%;
-    text-align: center;
-    background-color: hsla(1,60%,40%,0.7);
-    color: #fff;
+  content: "less than 320px";
+  font-size: 300%;
+  font-weight: bold;
+  position: fixed;
+  bottom: 60px;
+  width: 100%;
+  text-align: center;
+  background-color: hsla(1, 60%, 40%, 0.7);
+  color: #fff;
 }
+
 @media only screen and (min-width: 320px) {
-    body:after {
-        content: "320 to 480px";
-        background-color: hsla(90,60%,40%,0.7);
-    }
+  body:after {
+    content: "320 to 480px";
+    background-color: hsla(90, 60%, 40%, 0.7);
+  }
 }
+
 @media only screen and (min-width: 480px) {
-    body:after {
-        content: "480 to 768px";
-        background-color: hsla(180,60%,40%,0.7);
-    }
+  body:after {
+    content: "480 to 768px";
+    background-color: hsla(180, 60%, 40%, 0.7);
+  }
 }
+
 @media only screen and (min-width: 768px) {
-    body:after {
-        content: "768 to 1024px";
-        background-color: hsla(270,60%,40%,0.7);
-    }
+  body:after {
+    content: "768 to 1024px";
+    background-color: hsla(270, 60%, 40%, 0.7);
+  }
 }
+
 @media only screen and (min-width: 1024px) {
-    body:after {
-        content: "1024 and up";
-        background-color: hsla(360,60%,40%,0.7);
-    }
+  body:after {
+    content: "1024 and up";
+    background-color: hsla(360, 60%, 40%, 0.7);
+  }
 }
