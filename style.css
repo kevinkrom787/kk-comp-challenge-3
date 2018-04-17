@@ -292,11 +292,10 @@ hr {
 /* Graph section */
 
 .donut-graph-section {
-  grid-area: 7 /2 / 5 / 6;
-  padding-left: 35px;
-  width: 55%;
-  background-color: #EDF2F6;
-  padding-bottom: 18vh;
+    background-color: #EDF2F6;
+    grid-area: 7 /2 / 5 / 6;
+    padding: 0 0 13vh 35px;
+    width: 54%;
 }
 
 .donut-graph-text-one {
@@ -447,7 +446,7 @@ hr {
 }
 
 .icon-angle-up {
-  border-radius: 29px;
+  border-radius: 42%;
   border: 1px solid #7F8DA5;
   color: #7F8DA5;
   content: '\f106';
