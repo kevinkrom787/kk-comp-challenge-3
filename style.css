@@ -6,7 +6,7 @@ html {
 
 body {
   display: grid;
-  grid-template: 9.5% 9.1% 10% 4.5% 15.5% 28.5% 21.5% 2.5% 4.5%/ 15% 21% 20% 17% 27%;
+  grid-template: 9.5% 9.1% 10% 3.5% 15.5% 28.5% 21.5% 2.5% 4.5%/ 15% 21% 20% 17% 27%;
   height: 100%;
   margin: auto;
   max-width: 1440px;
@@ -581,7 +581,7 @@ hr {
     display: none;
   }
   body {
-    grid-template: 9.5% 8.5% 8% 4.5% 27.5% 14.5% 23.5% 1.5% 4.5%/0% 23% 24% 24% 29%
+    grid-template: 9.5% 8.5% 8% 3.5% 27.5% 14.5% 23.5% 1.5% 4.5%/0% 23% 24% 24% 29%
   }
   .search {
     width: 70vw;
@@ -609,11 +609,12 @@ hr {
     display: none;
   }
   body {
-    grid-template: 9.5% 7.5% 8% 4.5% 29.5% 11.5% 20.5% 15.5% 16.5%/0% 25% 25% 25% 25%;
+    grid-template: 9.5% 7.5% 8% 3.5% 29.5% 11.5% 20.5% 15.5% 16.5%/0% 25% 25% 25% 25%;
   }
   .search {
     width: 94%;
     padding-left: 3.2vw;
+    height: 82px;
   }
   .nav-header {
     width: 10%;
@@ -672,8 +673,8 @@ hr {
   .free-spirit {
     display: flex;
     flex-direction: column;
-    height: 33vh;
-    margin: -14px 0 0px 0;
+    height: 20vh;
+    margin: -13px 0 0px 0;
   }
   .job-link-border-bottom {
     margin: 0 0 49px 0px;
@@ -694,14 +695,16 @@ hr {
     display: none;
   }
   body {
-    grid-template: 9.5% 7.5% 8% 4.5% 17.5% 11.5% 20.5% 15.5% 16.5%/0% 25% 25% 25% 25%;
+    grid-template: 9.5% 7.5% 8% 3.5% 17.5% 11.5% 20.5% 15.5% 16.5%/0% 25% 25% 25% 25%;
   }
   .social {
     grid-area: 12 / 1 / 11 /6;
+    width: 95vw;
   }
   .link-to-job {
     display: flex;
     grid-area: 11 / 1 / 12 / 6;
+    margin: 50px 2% 0px 2%;
   }
   .link-to-job-header {
     font-size: 1.2em;
@@ -716,7 +719,7 @@ hr {
     margin: 0 0 49px 0px;
   }
   .social-button {
-    font-size: 0em;
+    width: 20vw;
   }
   table {
     height: 62vh;
@@ -743,7 +746,7 @@ hr {
     grid-template: 7.5% 10.5% 5% 4.5% 37.5% 14.5% 13.5% 10.5% 14.5%/0% 25% 25% 25% 25%;
   }
   .search {
-    height: 40px;
+    height: 61px;
     padding-left: 8vw;
     width: 73%;
   }
@@ -780,7 +783,8 @@ hr {
   }
   .link-to-job {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    margin-bottom: -7vh;
   }
   .job-link-input {
     width: 64vw;
@@ -798,53 +802,41 @@ hr {
 
 @media only screen and (min-width: 1400px) {
   body {
-        grid-template: 9.5% 9.1% 10% 3.5% 15.5% 28.5% 21.5% 2.5% 4.5%/ 15% 21% 20% 17% 27%;
+    grid-template: 9.5% 9.1% 10% 3.5% 15.5% 28.5% 21.5% 2.5% 4.5%/ 15% 21% 20% 17% 27%;
   }
-
   .social {
     width: 94.7%;
     border-right: 1px solid;
   }
-
   .search {
-width: 95%;
-height: 9.2vh;
+    width: 95%;
+    height: 9.2vh;
   }
-
   .border-with-icon {
-     width: 64%;
+    width: 64%;
   }
-
   .image-vertical-graph {
-  margin: 0 0 0 4vw;
+    margin: 0 0 0 4vw;
   }
-
   .job-link-input {
-        width: 13vw;
+    width: 13vw;
   }
-
   .copy-button {
-        width: 4.5vw;
-
+    width: 4.5vw;
   }
-
   .hiring-summary-hr {
-        width: 99.8%;
+    width: 99.8%;
   }
-
   .dashboard-nav-bar {
-        border-right: 1px solid;
+    border-right: 1px solid;
   }
   .vertical-graph {
-        border-right: 1px solid;
+    border-right: 1px solid;
   }
-
-.link-to-job-border {
-  border-right: 1px solid;
-}
-
-.job-title-border {
-   border-right: 1px solid;
-
-}
+  .link-to-job-border {
+    border-right: 1px solid;
+  }
+  .job-title-border {
+    border-right: 1px solid;
+  }
 }
