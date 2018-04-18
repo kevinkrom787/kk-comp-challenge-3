@@ -78,7 +78,7 @@ body {
   background-position: left;
   background-repeat: no-repeat;
   background-size: 25px 25px;
-  border-bottom: 1px solid #D3D3D3;
+  border-bottom: 1.4px solid #D3D3D3;
   border-top: none;
   font-size: 1.1em;
   height: 66px;
@@ -112,13 +112,11 @@ body {
 
 .header-menu-button {
   height: 100%;
-  width: 0%;
-  border-right: none;
+  border-style: none;
 }
 
 .header-menu-button:hover {
   color: #FCFBF9;
-  font-
 }
 
 .user-icon {
@@ -295,7 +293,7 @@ hr {
     background-color: #EDF2F6;
     grid-area: 7 /2 / 5 / 6;
     padding: 0 0 13vh 35px;
-    width: 54%;
+    width: 53%;
 }
 
 .donut-graph-text-one {
@@ -357,13 +355,14 @@ hr {
 }
 
 .graph-buttons {
-  width: 181px;
-  height: 30px;
   border-radius: 10px;
-  font-size: .7em;
-  margin: 0px 0vw 10vh 1.5vw;
   color: #757479;
+  cursor: pointer;
+  font-size: .7em;
   font-weight: 600;
+  height: 30px;
+  margin: 0px 0vw 10vh 1.5vw;
+  width: 181px;
 }
 
 .bold-numbers {
@@ -410,6 +409,14 @@ table {
   background-color: #7F8DA5;
   height: 30px;
   width: 6vw;
+  border: none;
+}
+
+.job-edit-button:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  color: none;
+  box-shadow: inset 0 0 0 3px #7F8DA5;
 }
 
 .border-bottom {
@@ -506,6 +513,24 @@ hr {
   color: #707A89;
 }
 
+.job-link-text {
+  font-size: .8em;
+  margin-bottom: 3vh;
+}
+
+.icon-globe {
+  margin-right: 6px;
+}
+
+.icon-qrcode {
+  margin-right: 6px;
+}
+
+.icon-paper-plane {
+  margin-right: 6px;
+}
+
+
 .copy-button {
   color: white;
   background-color: #67B7BE;
@@ -548,7 +573,7 @@ hr {
 
   .graph-buttons {
     width: 16vw;
-    height: 2vw;
+    height: 30px;
     margin: 0px 0vw 8vh 1.5vw;
   }
 
@@ -563,8 +588,7 @@ hr {
     display: none;
   }
   body {
-    grid-template: 5.5% 1.5% 8% 4.5% 15.5% 10.5% 16.5% 15.5% 16.5%/0% 25% 25% 25% 25%;
-    background-color: chartreuse;
+   grid-template: 9.5% 7.5% 8% 4.5% 29.5% 11.5% 20.5% 15.5% 16.5%/0% 25% 25% 25% 25%;
   }
   .search {
     width: 70vw;
