@@ -396,12 +396,13 @@ td {
 }
 
 table {
-  margin: 0% 0% 0% 4%;
-  height: 103vh;
-  border: 1px solid #7F8DA5;
-  border-right: none;
   border-left: none;
+  border-right: none;
   border-top: none;
+  border: 1px solid #7F8DA5;
+  height: 103vh;
+  margin: 0% 0% 0% 4%;
+  width: 91%;
 }
 
 .job-edit-button {
