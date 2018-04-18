@@ -93,7 +93,7 @@ body {
   border-bottom: 1.4px solid #D3D3D3;
   border-top: none;
   font-size: 1.1em;
-  height: 82px;
+ height: 9vh;
   padding: 0 0 0px 2vw;
   width: 59vw;
   max-width: 59vw;
@@ -585,6 +585,7 @@ hr {
   }
   .search {
     width: 70vw;
+    height: 9vh;
   }
   .graph-buttons {
     height: 30px;
@@ -601,6 +602,7 @@ hr {
   .search {
     padding-left: 2.5vw;
     width: 69vw;
+    height: 9vh;
   }
 }
 
@@ -614,7 +616,8 @@ hr {
   .search {
     width: 94%;
     padding-left: 3.2vw;
-    height: 82px;
+    height: 9vh;
+
   }
   .nav-header {
     width: 10%;
@@ -687,6 +690,7 @@ hr {
   }
   .search {
     padding-left: 4vw;
+    height: 9vh
   }
 }
 
@@ -746,9 +750,10 @@ hr {
     grid-template: 7.5% 10.5% 5% 4.5% 37.5% 14.5% 13.5% 10.5% 14.5%/0% 25% 25% 25% 25%;
   }
   .search {
-    height: 61px;
+ height: 7vh;
     padding-left: 8vw;
     width: 73%;
+
   }
   .nav-header {
     width: 18%;
