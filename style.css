@@ -50,6 +50,7 @@ body {
   grid-area: 1 / 2 / 1 / 6;
   justify-content: space-between;
   margin: 0 0 0 0;
+  box-sizing: border-box;
 }
 
 .nav-header {
@@ -91,12 +92,18 @@ body {
   background-repeat: no-repeat;
   background-size: 25px 25px;
   border-bottom: 1.4px solid #D3D3D3;
+  box-sizing: border-box;
   border-top: none;
   font-size: 1.1em;
- height: 9vh;
+  height: 9vh;
   padding: 0 0 0px 2vw;
   width: 59vw;
-  max-width: 59vw;
+  text-overflow: ellipsis;  
+
+}
+
+input.job-link-input::placeholder {
+  color: #d2c8c8;
 }
 
 .input-and-icon {
@@ -414,6 +421,14 @@ table {
   margin: 0% 0% 0% 4%;
 }
 
+.table-job-description {
+  width: 38%;
+}
+
+.table-edit {
+  width: 103%
+}
+
 .job-edit-button {
   background-color: #7F8DA5;
   border: none;
@@ -565,6 +580,10 @@ hr {
   width: 18vw;
 }
 
+.job-link-input::placeholder {
+  color: chartreuse;
+}
+
 .link-to-job-header {
   margin: 0 0 0 0;
 }
@@ -584,8 +603,8 @@ hr {
     grid-template: 9.5% 8.5% 8% 3.5% 27.5% 14.5% 23.5% 1.5% 4.5%/0% 23% 24% 24% 29%
   }
   .search {
-    width: 70vw;
-    height: 9vh;
+    width: 100%;
+    height: 9.3vh;
   }
   .graph-buttons {
     height: 30px;
@@ -601,8 +620,7 @@ hr {
 @media only screen and (max-width: 1050px) {
   .search {
     padding-left: 2.5vw;
-    width: 69vw;
-    height: 9vh;
+    height: 9.3vh;
   }
 }
 
@@ -614,9 +632,9 @@ hr {
     grid-template: 9.5% 7.5% 8% 3.5% 29.5% 11.5% 20.5% 15.5% 16.5%/0% 25% 25% 25% 25%;
   }
   .search {
-    width: 94%;
+    width: 100%;
     padding-left: 3.2vw;
-    height: 9vh;
+    height: 9.3vh;
 
   }
   .nav-header {
@@ -643,11 +661,15 @@ hr {
     width: 62%;
   }
   .social {
-    grid-area: 12 / 2 / 14 /6;
+    /* grid-area: 12 / 2 / 14 /6; */
   }
   .link-to-job {
     grid-area: 11 / 1 / 12 / 6;
     display: flex;
+  }
+
+  .link-to-job-header {
+    font-size: 1.1em;
   }
   .job-description {
     background-color: #EDF2F6;
@@ -665,6 +687,7 @@ hr {
     margin: 0 0 0 0%;
     height: 5.5vh;
     color: white;
+    width: 31vw;
   }
   .job-edit-button {
     margin: 0px 0 0 21vw;
@@ -677,10 +700,10 @@ hr {
     display: flex;
     flex-direction: column;
     height: 20vh;
-    margin: -13px 0 0px 0;
+    margin: -15px 0 0px 0;
   }
   .job-link-border-bottom {
-    margin: 0 0 49px 0px;
+    display: none;
   }
 }
 
@@ -690,8 +713,9 @@ hr {
   }
   .search {
     padding-left: 4vw;
-    height: 9vh
+    height: 9.3vh;
   }
+  
 }
 
 @media only screen and (max-width: 650px) {
@@ -720,10 +744,14 @@ hr {
     margin: -14px 0 0px 0;
   }
   .job-link-border-bottom {
-    margin: 0 0 49px 0px;
+    margin: 0 0 41px 0px;
+    width: 94%;
   }
   .social-button {
-    width: 20vw;
+    margin: 2vw 0 0 4vw;
+    padding-top: 1vw;
+}
+
   }
   table {
     height: 62vh;
@@ -750,9 +778,9 @@ hr {
     grid-template: 7.5% 10.5% 5% 4.5% 37.5% 14.5% 13.5% 10.5% 14.5%/0% 25% 25% 25% 25%;
   }
   .search {
- height: 7vh;
+    height: 7.4vh;
     padding-left: 8vw;
-    width: 73%;
+    width: 100%;
 
   }
   .nav-header {
@@ -772,6 +800,7 @@ hr {
   }
   .donut {
     height: 100vh;
+    width: 83vw;
   }
   .image-vertical-graph {
     height: 78%;
@@ -789,20 +818,26 @@ hr {
   .link-to-job {
     display: flex;
     flex-direction: column;
-    margin-bottom: -7vh;
+    max-height: 72vh;
   }
   .job-link-input {
     width: 64vw;
   }
   .copy-button {
-    width: 19.5vw;
+    width: 20.1vw;
   }
   .link-to-job-icon {
     font-size: .7em;
+    text-overflow: ellipsis;
+    }
+
+    .job-title-button-list {
+      width: 127%;
+      height: 0%;
+    }
+
   }
-  ::-webkit-input-placeholder {
-    color: #fff;
-  }
+
 }
 
 @media only screen and (min-width: 1400px) {
@@ -814,7 +849,7 @@ hr {
     border-right: 1px solid;
   }
   .search {
-    width: 95%;
+    width: 100%;
     height: 9.2vh;
   }
   .border-with-icon {
@@ -843,5 +878,11 @@ hr {
   }
   .job-title-border {
     border-right: 1px solid;
+  }
+}
+
+@media only screen and (min-width: 490px) {
+  .copy-button {
+    width: 9.5vw;
   }
 }
