@@ -208,7 +208,7 @@ h2 {
   align-items: center;
   display: flex;
   margin-right: 7vw;
-  width: 17%;
+  width: 21%;
 }
 
 .job-title-button {
@@ -230,7 +230,7 @@ h2 {
   height: 34px;
   justify-content: center;
   margin-right: 15px;
-  width: 10vw;
+  width: 9vw;
 }
 
 .icon-circle {
@@ -277,12 +277,13 @@ h2 {
 
 .dashboard-nav-bar {
   grid-area: 4 / 2 / 4 / 6;
+  font-size: 1em;
 }
 
 .hiring-summary {
   color: #88888B;
   display: flex;
-  font-weight: bold;
+  font-size: 1.1em;
   justify-content: space-around;
   margin: -7px 11vw 0 26px;
 }
@@ -290,6 +291,10 @@ h2 {
 .hiring-summary-hr {
   border: 1px solid #E7EAEE;
   width: 100%;
+}
+
+.hiring-summary-icon {
+ display: none;
 }
 
 .summary-link:hover {
@@ -622,6 +627,9 @@ hr {
     padding-left: 2.5vw;
     height: 9.3vh;
   }
+  .dashboard-nav-bar {
+    font-size: .8em;
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -706,7 +714,16 @@ hr {
 .job-link-input {
   height: 5vh;
   margin: 0 0 30px 0px;
-  width: 18vw;
+  width: 62%;
+}
+
+.copy-button {
+  width: 9vw;
+}
+
+.job-title-button-list {
+    margin-right: 9%;
+    width: 25%;
 }
 
 }
@@ -738,9 +755,10 @@ hr {
     grid-area: 11 / 1 / 12 / 6;
     margin: 50px 2% 0px 2%;
   }
-  .link-to-job-header {
-    font-size: 1.2em;
-  }
+.link-to-job-header {
+  min-height: 48px;
+  font-size: 1.2em;
+}
   .free-spirit {
     display: flex;
     flex-direction: column;
@@ -755,17 +773,27 @@ hr {
     margin: 2vw 0 0 4vw;
     padding-top: 1vw;
 }
+.copy-button {
+  width: 28vw;
+}
+.job-link-input {
+  width: 89%;
+}
+.job-title-button-list {
+  margin-right: 14%;
+}
 
-  }
   table {
     height: 62vh;
   }
+
   .dashboard-nav-bar {
-    font-size: .7em;
+    font-size: .5em;
   }
-  .job-title-button-list {
-    margin-right: 15%;
-  }
+
+}
+
+
 }
 
 @media only screen and (max-width: 573px) {
@@ -811,7 +839,7 @@ hr {
     width: 75%
   }
   .rounded-buttons {
-    margin-left: 31vw;
+    margin-left: 539%;
   }
   #long-button {
     display: none;
@@ -822,7 +850,7 @@ hr {
   .link-to-job {
     display: flex;
     flex-direction: column;
-    max-height: 72vh;
+    max-height: 83vh;
   }
   .job-link-input {
     width: 64vw;
@@ -835,10 +863,10 @@ hr {
     text-overflow: ellipsis;
     }
 
-    .job-title-button-list {
+    /* .job-title-button-list {
       width: 127%;
       height: 0%;
-    }
+    } */
 
   }
 
@@ -885,8 +913,10 @@ hr {
   }
 }
 
-@media only screen and (min-width: 490px) {
-  .copy-button {
-    width: 9.5vw;
-  }
+@media only screen and (min-width: 600) {
+ .dashboard-nav-bar {
+   display: none;
+ }
 }
+
+
