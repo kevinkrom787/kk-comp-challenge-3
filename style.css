@@ -95,9 +95,9 @@ body {
   box-sizing: border-box;
   border-top: none;
   font-size: 1.1em;
-  height: 9vh;
+  height: 9.3vh;
   padding: 0 0 0px 2vw;
-  width: 59vw;
+  width: 61vw;
   text-overflow: ellipsis;  
 
 }
@@ -660,9 +660,7 @@ hr {
     padding-top: 20px;
     width: 62%;
   }
-  .social {
-    /* grid-area: 12 / 2 / 14 /6; */
-  }
+
   .link-to-job {
     grid-area: 11 / 1 / 12 / 6;
     display: flex;
@@ -705,6 +703,12 @@ hr {
   .job-link-border-bottom {
     display: none;
   }
+.job-link-input {
+  height: 5vh;
+  margin: 0 0 30px 0px;
+  width: 18vw;
+}
+
 }
 
 @media only screen and (max-width: 750px) {
